@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
+let city = {
+    name: "Madrid",
+    country: "Spain"
+};
+
 ReactDOM.render(
-    <ul>
-        <li>Hot Dogs</li>
-        <li>Hamburgers</li>
-        <li>Pizza</li>
-        <li>Sushi</li>
-    </ul>,
+    <h1 id="heading" className="cool-text">
+        { city.name } is in { city.country }
+    </h1>,
     document.getElementById('root')
 );
